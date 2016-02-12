@@ -1,0 +1,50 @@
+@import '/bootstrap/scss/bootstrap/mixins/_vendor-prefixes.scss';
+
+@import 'components/_context_selection';
+@import 'components/sidebar';
+@import 'components/pie_charts';
+
+#splash {
+  background: url('../img/bg.jpg') repeat-x;
+  .login {
+    background: white url(../img/logo-splash.png) no-repeat center 35px;
+  }
+}
+
+.topbar .navbar {
+  height: 59px;
+  background: url(../img/nav-bg.jpg) center center repeat-x;
+}
+
+.navbar-brand {
+  height: 59px;
+  padding-right: 0;
+}
+
+.navbar-brand img {
+  max-height: 59px;
+}
+
+.topbar .switcher_bar .btn.btn-topnav {
+  color: #4564E2;
+  margin-top: 1em;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #4564E2;
+  line-height: 41px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #4564E2;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #4564E2;
+  background-color: rgba(0,0,0,0.1);
+}
+
