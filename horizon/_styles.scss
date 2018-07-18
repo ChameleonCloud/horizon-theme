@@ -1,4 +1,4 @@
-@import '/bootstrap/scss/bootstrap/mixins/_vendor-prefixes.scss';
+@import '/horizon/lib/bootstrap_scss/scss/bootstrap/mixins/_vendor-prefixes.scss';
 
 @import 'components/_context_selection';
 @import 'components/sidebar';
@@ -47,4 +47,3 @@
   color: #4564E2;
   background-color: rgba(0,0,0,0.1);
 }
-

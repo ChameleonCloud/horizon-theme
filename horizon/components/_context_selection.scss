@@ -13,7 +13,7 @@
 
         &.dropdown-header,
         & > a {
-          padding: $dropdown-item-padding-vertical $dropdown-item-padding-horizontal*2 $dropdown-item-padding-vertical $dropdown-item-padding-horizontal;
+          padding: $bs-dropdown-item-padding-vertical $bs-dropdown-item-padding-horizontal*2 $bs-dropdown-item-padding-vertical $bs-dropdown-item-padding-horizontal;
         }
 
         &.dropdown-header {
@@ -27,7 +27,7 @@
           & > .fa.fa-check {
             left: auto;
             float: auto;
-            padding-left: $dropdown-item-padding-horizontal/2;
+            padding-left: $bs-dropdown-item-padding-horizontal/2;
           }
         }
       }
