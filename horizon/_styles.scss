@@ -5,15 +5,15 @@
 @import 'components/pie_charts';
 
 #splash {
-  background: url(#{$images-url}/bg.jpg) repeat-x;
+  background: url("#{$images-url}/bg.jpg") repeat-x;
   .login {
-    background: white url(#{$images-url}/logo-splash.png) no-repeat center 35px;
+    background: white url("#{$images-url}/logo-splash.png") no-repeat center 35px;
   }
 }
 
 .topbar .navbar {
   height: 59px;
-  background: url(#{$images-url}/nav-bg.jpg) center center repeat-x;
+  background: url("#{$images-url}/nav-bg.jpg") center center repeat-x;
 }
 
 .navbar-brand {
