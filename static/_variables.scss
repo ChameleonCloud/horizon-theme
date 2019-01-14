@@ -1,24 +1,7 @@
-@import "/themes/default/variables";
-@import "/themes/default/styles";
+@import '/themes/default/variables';
+@import '/themes/default/styles';
 
-$navbar-height:         60px;
-
-$navbar-default-toggle-hover-bg:           rgba(0,0,0,0.1);
-$navbar-default-toggle-icon-bar-bg:        #4564E2;
-$navbar-default-toggle-border-color:       rgba(0,0,0,0.1);
-
-/*
-$sidebar-background-color: $table-bg-accent;
-$sidebar-active-indicator-width: $caret-width-base;
-
-
-$brand-chameleon: #629C2E;
-$sidebar-box-shadow-color: #c7c7c7;
-$sidebar-box-shadow: -3px 2px 6px -2px $sidebar-box-shadow-color inset, -1px 0 0 0 $sidebar-box-shadow-color inset;
-$sidebar-active-color: $brand-chameleon;
-$sidebar-active-box-shadow: -3px 3px 6px -3px;
-*/
-
-
-
-
+$navbar-height: 60px;
+$navbar-default-toggle-hover-bg: rgba(0,0,0,0.1);
+$navbar-default-toggle-icon-bar-bg: #4564E2;
+$navbar-default-toggle-border-color: rgba(0,0,0,0.1);
