@@ -42,3 +42,8 @@
   color: #4564E2;
   background-color: rgba(0,0,0,0.1);
 }
+
+.top-banner {
+  position: relative;
+  top: $navbar-height;
+}
