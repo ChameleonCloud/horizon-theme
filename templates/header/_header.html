@@ -59,5 +59,16 @@ removed when federation is 100% rolled out to all users.
     <a href="https://www.chameleoncloud.org/about/frequently-asked-questions/#toc-what-is-federated-login-" target="_blank" rel="noopener noreferrer">federated login</a>.
   </p>
 </div>
+{% elif request.user.is_federated %}
+<div class="alert alert-info alert-dismissable">
+  <a class="close" data-dismiss="alert" href="#">
+    <span class="fa fa-times"></span>
+  </a>
+  <p>
+    Not seeing instances or leases you've launched in the past? They may still
+    be linked to your legacy Chameleon account. Learn how to access them
+    <a href="https://chameleoncloud.readthedocs.io/en/latest/user/federation.html#legacy-sign-in" target="_blank" rel="noopener noreferrer">here</a>.
+  </p>
+</div>
 {% endif %}
 {% endspaceless %}
