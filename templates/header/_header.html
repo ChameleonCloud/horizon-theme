@@ -61,14 +61,11 @@ removed when federation is 100% rolled out to all users.
     </p>
   </div>
 {% elif request.user.is_federated %}
-  <div class="alert alert-info alert-dismissable">
-    <a class="close" data-dismiss="alert" href="#">
-      <span class="fa fa-times"></span>
-    </a>
+  <div class="alert alert-info">
     <p>
       Not seeing instances or leases you've launched in the past? They may still
       be linked to your legacy Chameleon account. Learn how to access them
-      <a href="https://chameleoncloud.readthedocs.io/en/latest/user/federation.html#legacy-sign-in" target="_blank" rel="noopener noreferrer">here</a>.
+      <a href="https://chameleoncloud.readthedocs.io/en/latest/user/federation.html#signing-in-to-your-legacy-account" target="_blank" rel="noopener noreferrer">here</a>.
     </p>
   </div>
 {% endif %}
