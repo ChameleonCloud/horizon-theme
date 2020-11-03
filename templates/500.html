@@ -1,0 +1,24 @@
+{% extends "error.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Internal error" %}{% endblock %}
+
+{% block error_title %}{% trans "Sorry, something went wrong." %}{% endblock %}
+
+{% block error_body %}
+<p>
+  {% blocktrans trimmed %}
+    It's a good idea to first check if there are any
+    <a href="https://www.chameleoncloud.org/user/outages/">ongoing outages</a>
+    that have been announced. If so, things will hopefully be
+    back in operation momentarily.
+  {% endblocktrans %}
+  </p>
+  <p>
+  {% blocktrans trimmed %}
+    If you're still seeing this error, please file a
+    <a href="https://www.chameleoncloud.org/user/help/">Help Desk</a>
+    ticket so one of our operators can assist you as soon as possible.
+  {% endblocktrans %}
+  </p>
+{% endblock %}

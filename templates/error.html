@@ -11,33 +11,12 @@
     <div class="col-xs-11 col-sm-8 col-md-6 col-lg-5 horizontal-center">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="login-title">
-            {% block error_title %}
-              Sorry, something went wrong.
-            {% endblock %}
-          </h3>
+          <h3 class="login-title">{% block error_title %}{% endblock %}</h3>
         </div>
 
         <div class="panel-body">
-          <p>
-            {% block error_body %}
-              <p>
-              {% blocktrans trimmed %}
-                It's a good idea to first check if there are any
-                <a href="https://www.chameleoncloud.org/user/outages/">ongoing outages</a>
-                that have been announced. If so, things will hopefully be
-                back in operation momentarily.
-              {% endblocktrans %}
-              </p>
-              <p>
-              {% blocktrans trimmed %}
-                If you're still seeing this error, please file a
-                <a href="https://www.chameleoncloud.org/user/help/">Help Desk</a>
-                ticket so one of our operators can assist you as soon as possible.
-              {% endblocktrans %}
-              </p>
-            {% endblock %}
-          </p>
+          {% block error_body %}
+          {% endblock %}
         </div>
         <div class="panel-footer">
           <div class="clearfix"></div>
