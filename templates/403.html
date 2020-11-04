@@ -3,15 +3,15 @@
 
 {% block title %}{% trans "Forbidden" %}{% endblock %}
 
-{% block error_title %}{% trans "You are not part of any active allocations" %}{% endblock %}
+{% block error_title %}{% trans "No active allocations" %}{% endblock %}
 
 {% block error_body %}
   <p>
     {% blocktrans trimmed %}
-      Your user is not added to any projects that have an allocation approved
-      and active yet. As your PI to be added to a project, or, if you have PI
-      status, request a new allocation. If your allocation has recently expired,
-      you can request a recharge.
+      Your user is not yet added to any projects that have an active allocation.
+      Ask your PI to be added to a project, or, if you have PI status, request
+      a new allocation. If your allocation has recently expired, you can request
+      a recharge.
     {% endblocktrans %}
   </p>
   <p>
