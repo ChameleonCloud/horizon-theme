@@ -2,9 +2,6 @@
 NOTE: we override this file only to remove the _region_selection template
 from the right navbar. When we have completely turned off multi region and
 cleaned up the Keystone endpoints at each region, this override can go.
-
-NOTE: we also have an alert for non-federated users; this likewise can be
-removed when federation is 100% rolled out to all users.
 {% endcomment %}
 
 {% load i18n %}
@@ -39,7 +36,7 @@ removed when federation is 100% rolled out to all users.
 
       <ul class="nav navbar-nav navbar-right">
         {% if profiler_enabled %}
-          {% include "developer/profiler/_mode_picker.html" %}
+        {% include "developer/profiler/_mode_picker.html" %}
         {% endif %}
         {% include "header/_keystone_provider_selection.html" %}
         {% include "header/_user_menu.html" %}
@@ -47,27 +44,4 @@ removed when federation is 100% rolled out to all users.
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-<div class="top-banner">
-{% if request.user.is_authenticated and not request.user.is_federated %}
-  <div class="alert alert-warning alert-dismissable">
-    <a class="close" data-dismiss="alert" href="#">
-      <span class="fa fa-times"></span>
-    </a>
-    <p>
-      You are currently logged in to a legacy Chameleon account. Beginning
-      December 2020, all Chameleon accounts must be migrated to use
-      <a href="https://www.chameleoncloud.org/about/frequently-asked-questions/#toc-what-is-federated-login-" target="_blank" rel="noopener noreferrer">federated login</a>.
-    </p>
-  </div>
-{% elif request.user.is_federated %}
-  <div class="alert alert-info">
-    <p>
-      Not seeing instances or leases you've launched in the past? They may still
-      be linked to your legacy Chameleon account. Learn how to access them
-      <a href="https://chameleoncloud.readthedocs.io/en/latest/user/federation.html#signing-in-to-your-legacy-account" target="_blank" rel="noopener noreferrer">here</a>.
-    </p>
-  </div>
-{% endif %}
-</div>
 {% endspaceless %}
