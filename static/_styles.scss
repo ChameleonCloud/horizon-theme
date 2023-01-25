@@ -47,3 +47,8 @@
   position: relative;
   top: $navbar-height;
 }
+
+// If a chameleon-supported element is empty, infill a Chameleon logo
+.chameleon-supported:empty::after {
+  content: url("https://www.chameleoncloud.org/static/images/logo-small.png");
+}
