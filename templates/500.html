@@ -1,11 +1,8 @@
-{% extends "error.html" %}
+{% extends "500.html" %}
 {% load i18n %}
 
-{% block title %}{% trans "Internal error" %}{% endblock %}
-
-{% block error_title %}{% trans "Sorry, something went wrong." %}{% endblock %}
-
-{% block error_body %}
+{% block text %}
+<h2>{% trans "Sorry, something went wrong." %}</h2>
 <p>
   {% blocktrans trimmed %}
     It's a good idea to first check if there are any
