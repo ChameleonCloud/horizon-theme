@@ -1,5 +1,20 @@
 {% extends "500.html" %}
-{% load i18n %}
+{% load i18n static %}
+
+{% block css %}
+{{ block.super }}
+<style>
+body {
+  background: url("{% static 'themes/chameleoncloud/img/bg.jpg' %}") repeat-x;
+}
+div#container {
+  background-image: url("{% static 'themes/chameleoncloud/img/logo-splash.svg' %}");
+}
+a {
+  color: #4564E2;
+}
+</style>
+{% endblock %}
 
 {% block text %}
 <h2>{% trans "Sorry, something went wrong." %}</h2>
