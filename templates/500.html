@@ -1,11 +1,23 @@
-{% extends "error.html" %}
-{% load i18n %}
+{% extends "500.html" %}
+{% load i18n static %}
 
-{% block title %}{% trans "Internal error" %}{% endblock %}
+{% block css %}
+{{ block.super }}
+<style>
+body {
+  background: url("{% static 'themes/chameleoncloud/img/bg.jpg' %}") repeat-x;
+}
+div#container {
+  background-image: url("{% static 'themes/chameleoncloud/img/logo-splash.svg' %}");
+}
+a {
+  color: #4564E2;
+}
+</style>
+{% endblock %}
 
-{% block error_title %}{% trans "Sorry, something went wrong." %}{% endblock %}
-
-{% block error_body %}
+{% block text %}
+<h2>{% trans "Sorry, something went wrong." %}</h2>
 <p>
   {% blocktrans trimmed %}
     It's a good idea to first check if there are any
